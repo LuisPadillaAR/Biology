@@ -1,0 +1,20 @@
+{
+  "name": "api-biology",
+  "version": "1.0.0",
+  "description": "API encargada de extraer y modificar datos",
+  "homepage": "https://github.com/LuisPadillaAR/Biology#readme",
+  "bugs": {
+    "url": "https://github.com/LuisPadillaAR/Biology/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisPadillaAR/Biology.git"
+  },
+  "license": "ISC",
+  "author": "Luis Alejandro Padilla Rojas",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
