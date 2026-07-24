@@ -1,9 +1,11 @@
 import express, {} from "express";
+import { getBirds, getBirdById, createBird, deleteBirdById, } from "../controllers/bird.controller.js";
 const birdRoute = express.Router();
-birdRoute.get("/", (req, res) => res.send("ALL BIRDS"));
-birdRoute.get("/:id", (req, Res) => Res.send("ID BIRD"));
-birdRoute.post("/", (req, res) => res.send("ADD BIRD"));
-birdRoute.put("/", (req, res) => res.send("UPDATE BIRD"));
-birdRoute.delete("/", (req, res) => res.send("DELETE BIRD"));
+birdRoute
+    .get("/", getBirds)
+    .get("/:id", getBirdById)
+    .post("/", createBird)
+    .delete("/:id", deleteBirdById)
+    .put("/:id", (req, res) => res.send("UPDATE BIRD"));
 export default birdRoute;
 //# sourceMappingURL=bird.routes.js.map
