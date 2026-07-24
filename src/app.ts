@@ -1,1 +1,1 @@
-console.log("hola desde ts");
+console.log("hola desde");
