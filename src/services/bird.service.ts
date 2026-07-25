@@ -1,4 +1,5 @@
 // poner with {type: "json"} cuando se importe por em module
+import { promises } from "node:dns";
 import aves from "./birds.json" with { type: "json" };
 
 let idgen: number = 0;
@@ -14,6 +15,8 @@ const birds: bird[] = [];
 export const findAllBirds = () => {
   return birds;
 };
+
+
 
 export const findBirdById = (id: number) => {
   const bid = birds.find((e) => e.id == id);

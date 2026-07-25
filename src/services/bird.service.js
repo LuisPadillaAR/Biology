@@ -1,6 +1,3 @@
-// poner with {type: "json"} cuando se importe por em module
-import { promises } from "node:dns";
-import aves from "./birds.json" with { type: "json" };
 let idgen = 0;
 const birds = [];
 export const findAllBirds = () => {
@@ -30,4 +27,3 @@ export const deleteBird = (id) => {
         return bird;
     }
 };
-//# sourceMappingURL=bird.service.js.map

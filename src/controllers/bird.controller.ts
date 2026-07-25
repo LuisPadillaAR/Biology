@@ -11,6 +11,7 @@ interface bird {
 }
 
 export const getBirds = (req: Request, res: Response) => {
+  console.log("find");
   const birds = findAllBirds();
   res.json(birds);
 };

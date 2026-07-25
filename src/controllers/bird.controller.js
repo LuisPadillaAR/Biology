@@ -1,8 +1,7 @@
-import {} from "express";
 import { findAllBirds, findBirdById, addBird, deleteBird, } from "../services/bird.service.js";
-export const getBirds = (req, res) => {
+export const getBirds = async (req, res) => {
     console.log("find");
-    const birds = findAllBirds();
+    const birds = await findAllBirds();
     res.json(birds);
 };
 export const getBirdById = (req, res) => {
@@ -22,4 +21,3 @@ export const deleteBirdById = (req, res) => {
         res.status(404).json({ error: "NO EXIST" });
     }
 };
-//# sourceMappingURL=bird.controller.js.map
