@@ -6,5 +6,5 @@ const PORT = 3000;
 app.use(json());
 app.use("/", home);
 app.use("/birds", birdRoute);
-app.listen(PORT, () => console.log("Corriendo..."));
+app.listen(PORT, () => console.log("Corriendo... en ubuntu"));
 //# sourceMappingURL=app.js.map
