@@ -4,6 +4,7 @@ import aves from "./birds.json" with { type: "json" };
 let idgen = 0;
 const birds = [];
 export const findAllBirds = () => {
+    console.log("sa");
     return birds;
 };
 export const findBirdById = (id) => {

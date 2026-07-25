@@ -13,6 +13,7 @@ interface bird {
 const birds: bird[] = [];
 
 export const findAllBirds = () => {
+  console.log("sa");
   return birds;
 };
 
